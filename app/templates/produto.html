@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css'%}">
+</head>
+<body>
+    <h1>Produtos</h1>
+    <a href="{% url 'index' %}"><button>Index Page</button></a>
+    <a href="{% url 'pag_second' %}"><button>Pagina Secundaria</button></a>
+
+    <button onclick="teste()">Clique me!</button>
+    <script src="{% static 'js/scripts.js' %}"></script>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+            </tr>
+        </thead>
+        <tbody>
+         <tr>
+            <td><a href="{% url 'index'%}">{{ produto.nome }}</a></td>
+            <td>{{ produto.preco }}</td>
+            <td>{{ produto.estoque }}</td>
+         </tr>
+        </tbody>
+    </table>
+</body>
+</html>

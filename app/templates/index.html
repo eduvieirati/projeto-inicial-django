@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <center>
+    <h1>Index</h1>
+    <h1>{{ teste }}</h1>
+    <h1>{{ login }}</h1>
+    <p>Começo em: </p>
+    <img src="{% static 'images/django-logo.png' %}"
+    alt="Logo do Django, tela com as letras D J A N G O em branco com o fundo verde escuro" width="600", height="340">
+    <center><a href="{% url 'pag_second' %}"><button>Second Page</button></a></center>
+    <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+    <h1><b>TABELA</b></h1>
+    <div id="tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+             {% for produto in produtos %}
+             <tr>
+                <td><a href="{% url 'produto' produto.id %}" target="_blank">{{ produto.nome }}</a></td>
+                <td>{{ produto.preco }}</td>
+             </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </center>      
+</body>
+</html>

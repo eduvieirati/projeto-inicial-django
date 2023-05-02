@@ -1,0 +1,36 @@
+body{
+    background-color: #103E2E;
+    color: white;
+}
+
+p{
+    color: aquamarine;
+    font-size: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border-radius: 5px;
+}
+
+#tabela {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    padding: 2px;
+}
+
+b {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+}

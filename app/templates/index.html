@@ -14,9 +14,9 @@
     <h1>{{ teste }}</h1>
     <h1>{{ login }}</h1>
     <p>Começo em: </p>
+    <!-- IMG PARA IMAGENS PASSANDO COMO VALOR DA TAG: O TRCHO {% static 'images/django-logo.png' %} PARA REFERENCIAR A PASTA -->
     <img src="{% static 'images/django-logo.png' %}"
     alt="Logo do Django, tela com as letras D J A N G O em branco com o fundo verde escuro" width="600", height="340">
-    <!-- em href é passado em forma de conversão {% codigo python %} para HTML -->
     <center><a href="{% url 'pag_second' %}"><button>Second Page</button></a></center>
     <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
     <h1><b>TABELA</b></h1>
@@ -31,7 +31,7 @@
             <tbody>
              {% for produto in produtos %}
              <tr>
-                <!-- em href é passado em forma de conversão {% codigo python %} para HTML -->
+                <!-- a pegando url produto e puxando pelo id -->
                 <td><a href="{% url 'produto' produto.id %}" target="_blank">{{ produto.nome }}</a></td>
                 <td>{{ produto.preco }}</td>
              </tr>

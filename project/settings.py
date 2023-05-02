@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-%l($qnw+c73l@xriolwfhx79c-2p-rd!@)_fb6j2$progj@=t^
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Quando o projetor estiver em produção manter em False, quando em desenvolvimento manter em True
-DEBUG = True
+DEBUG = False
 
 # Digite aqui o host ou dominio do site que você irá servir
 # Caso o domínio seja genérico, use o " '*' "

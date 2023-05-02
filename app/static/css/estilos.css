@@ -1,3 +1,21 @@
+/*
+ * CSS usado:
+ *
+ *    background-color: cor de fundo
+ *    color: cor da fonte
+ *    font-size: tamanho da fonte
+ *    a:link: link antes de ser clicado
+ *    a: visited: depois de ser clicado
+ *    text-decoration: decoração do texto
+ *    position: absolute: posição em que o elemento pode ser movido
+ *    top: topo da página
+ *    left: esquerda da página
+ *    border-radius: arredondamento de borda
+ *    padding: espaçamento entre elementos
+ *    
+ *
+ */
+
 body{
     background-color: #103E2E;
     color: white;
